@@ -1,0 +1,734 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+}
+
+
+header{
+    background: linear-gradient(to bottom, hsl(10, 100%, 72%), hsl(355, 100%, 65%), hsl(355, 100%, 65%));
+    width: 100%;
+    height: 550px;
+    border-bottom-left-radius: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.overflow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-bottom-left-radius: 100px;
+}
+
+
+
+.contenido__textos__header > h1{
+    display: inline-block;
+    padding: 30px 20px;
+}
+
+.img-header{
+
+    position: absolute;
+    width: 330%;
+    top: -140px;
+    left: -300px;
+    z-index: -1;
+    object-position: -100;
+    
+    
+}
+
+.titulo-menu{
+    font-weight: 600;
+    color: #000;
+    z-index: 3001;
+}
+
+.caja-menu-contenedora{
+    margin-top: 30pxpx;
+}
+
+.caja-menu-contenedora > ul{
+    padding: 20px;
+}
+
+.arrow-dark{
+    width: 10px;
+}
+
+.linea > span{
+    display: flex;
+    background-color: #000000bb;
+    height: 2px;
+    width: 200px;
+    margin: 50% auto 5px auto;
+    border-radius: 2px;
+}
+
+
+/*MENU DEL HAM*/
+.menu{
+    display: none;
+}
+
+.menu_active{
+    width: 90%;
+    background: #fff;
+    display: flex;
+    margin: auto;
+    height: auto;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    z-index: 3000;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.product{
+    display: flex;
+    z-index: 4000;
+}
+
+.company{
+    display: flex;
+    z-index: 4000;
+}
+
+.connect{
+    display: flex;
+    z-index: 4000;
+}
+/*DESPEGABLES DEL SUBMENU*/
+.desplegable-1_d{
+    display: none;
+    /*z-index: 3001;*/ 
+}
+
+.desplegable-2_d{
+    display: none;
+    /*z-index: 3001;*/ 
+}
+
+.desplegable-3_d{
+    display: none;
+    /*z-index: 3001;*/ 
+}
+
+
+.desplegable-1{
+    display: flex;
+    flex-direction: column;
+    background: #efeff1;
+    padding: 30px 80px;
+    z-index: 3001;
+}
+
+.desplegable-1 > a{
+    padding: 10px;
+}
+
+.desplegable-2{
+    display: flex;
+    flex-direction: column;
+    background: #efeff1;
+    padding: 30px 80px;
+    z-index: 3001;
+    
+}
+
+.desplegable-2 > a{
+    padding: 10px;
+}
+
+.desplegable-3{
+    display: flex;
+    flex-direction: column;
+    background: #efeff1;
+    padding: 30px 80px;
+    z-index: 3001;
+    
+}
+
+.desplegable-3 > a{
+    padding: 10px;
+}
+
+.boton-login{
+    margin: 10px;
+    z-index: 3001;
+}
+
+.ccc{
+    display: block;
+    margin: auto;
+    z-index: 3001;
+}
+
+.boton-login input[type=button]{
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+
+}
+
+.boton-sign-up{
+    margin: 10px auto 30px auto;
+    z-index: 3001;
+    
+}
+
+.boton-sign-up input[type="button"]{
+    background: linear-gradient(to right, hsl(10, 100%, 72%), hsl(355, 100%, 65%), hsl(355, 100%, 65%));
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: #f3f3f3;
+    font-size: 16px;
+    padding: 10px 40px;
+    
+
+}
+
+
+.ham{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    outline: none;
+    top: 30px;
+    right: 30px;
+
+}
+
+.ham > span{
+    display: block;
+    background-color: #f3f3f3;
+    height: 3px;
+    width: 28px;
+    margin: 5px auto;
+    border-radius: 2px;
+}
+
+img{
+    width: 100%;
+}
+
+.contenido__textos__header{
+    color: #fff;
+}
+
+.titulo__principal{
+    display: block;
+    margin-top: 30%;
+    text-align: center;
+    padding: 30px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+
+    .titulo__principal{
+        margin-top: 20%;
+    }
+
+    .textos__cajamorada > h2{
+
+        margin-top: 60% !important;
+    }
+
+    .phones{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (min-width: 1100px) {
+    .ham{
+        display: none;
+    }
+
+    .menu{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        color: #fff;
+    }
+
+    .linea{
+        display: none;
+    }
+
+    
+
+    .caja-menu-contenedora > ul{
+        display: inline-block;
+    }
+
+    .titulo-menu{
+        color: #fff;
+    }
+
+    .boton-login{
+        margin: 10px 0 10px 35%;
+        padding: 10px;
+    }
+
+    .boton-login input[type=button]{
+        border: none;
+        background: transparent;
+        outline: none;
+        font-size: 16px;
+        color: #fff;
+    
+    }
+    
+    .boton-sign-up{
+        margin: 10px auto 30px 0;
+        z-index: 3001;
+        
+    }
+    
+    .boton-sign-up input[type="button"]{
+        background: #fff;
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        color: hsl(10, 100%, 72%);
+        font-size: 16px;
+        padding: 10px 40px;
+        
+    
+    }
+
+    .boton-sign-up input[type="button"]:hover{
+        background: rgba(255, 255, 255, 0.603);
+        cursor: pointer;
+    }
+
+    .desplegable-1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #efeff1;
+        border-radius: 20px;
+        margin-top: 30px;
+        padding: 30px 50px;
+        z-index: 3001;
+        left: -10px;
+    }
+    
+    .desplegable-1 > a{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .desplegable-1 > a:hover{
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #000;
+        
+    }
+    
+    .desplegable-2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #efeff1;
+        padding: 30px 80px;
+        z-index: 3001;
+        margin-top: 30px;
+        border-radius: 20px;
+    
+        
+    }
+    
+    .desplegable-2 > a{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .desplegable-2 > a:hover{
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #000;
+        
+    }
+    
+    .desplegable-3{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #efeff1;
+        padding: 30px 80px;
+        z-index: 3001;
+        border-radius: 20px;
+        margin-top: 30px;
+        
+    }
+    
+    .desplegable-3 > a{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .desplegable-3 > a:hover{
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #000;
+        
+    }
+
+    .titulo-menu:hover{
+        text-decoration: underline;
+
+    }
+    
+    .titulo__principal{
+        display: block;
+        margin-top: 5%;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .modern, .publish{
+        display: inline-block;
+    }
+
+    .grow, .online{
+        display: inline-block;
+    }
+    
+
+    .btn1 input[type="button"]:hover{
+        cursor: pointer;
+    }
+    
+    .btn2 input[type="button"]:hover{
+        border: 1px solid #fff;
+        outline: none;
+        background: none;
+        color:  #fff;
+        padding: 15px 20px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .imagenen{
+        width: 60%;
+        float: right;
+        position: relative;
+        right: -150px;
+    }
+
+    .main_textos__contenedor{
+        text-align: left !important;
+    }
+
+    .main_textos__contenedor > h2{
+        margin-left: 40px;
+    }
+
+    .contenedor__caja__morada{
+        display: flex;
+        flex-direction: row;
+        height: 300px !important;
+        margin-top: 400px !important;
+        
+    }
+
+    .main__caja__morada{
+        width: 100%;
+        display: flex !important;
+        flex-direction: row;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: left !important;
+        overflow: hidden;
+    }
+
+
+    .main__caja__morada > div{
+        margin-top: 0;
+
+    }
+    
+    .main__caja__morada > div{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .main__caja__telefonos{
+        height: 300px !important;
+    }
+    
+    .phones{
+        top: 1 !important;
+        width: 45%;
+        z-index: 4;
+    }
+
+    .textos__cajamorada{
+        width: 40%;
+        display: inline-block;
+        position: relative;
+        top: 0;
+    }
+
+    .textos__cajamorada > h2{
+        margin-top: 50px !important;
+    }
+
+    .ej{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .img__laptop__mobile{
+        width: 150%;
+        
+    }
+
+    .main__open{
+        margin-top: 300px;
+        display: flex;
+    }
+
+    .footer__item{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    footer{
+        height: 400px !important;
+    }
+
+    .footer__item__contenet{
+        margin-top: 0;
+        padding: 20px 100px 0 100px;
+    }
+
+
+}
+
+.titulo__principal__desactivado{
+    display: none;
+}
+
+.titulo__principal > h1{
+    font-weight: 600;
+}
+
+.titulo__principal{
+    font-weight: 300;
+}
+
+.botones-del-header{
+    display: block; /*para tenerlo como lo tenia es block*/
+    margin: auto;
+    text-align: center;
+    z-index: 3001;
+}
+
+.botones-del-header__desactivado{
+    display: none;
+}
+.btn1{
+    display: inline-block;
+    padding-right: 5px;
+}
+.btn2{
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.btn1 input[type="button"]{
+    border: none;
+    background: #fff;
+    color:  hsl(356, 100%, 66%);
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn2 input[type="button"]{
+    border: 1px solid #fff;
+    outline: none;
+    background: none;
+    color:  #fff;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.main__contenedor__design > h2{
+    text-align: center;
+}
+
+.main_textos__contenedor{
+    text-align: center;
+}
+
+
+/*ESTA ES LA PARTE DE LA CAJA MORADA*/
+
+.contenedor__caja__morada{
+    margin-top: 250px;
+    position: relative;
+    height: auto;
+    background: #373854;
+    color: #fff;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    z-index: 3;
+}
+
+.main__caja__telefonos{
+    
+    
+    position: relative;
+    height: 700px;
+    z-index: 1;
+    overflow: hidden;
+    
+    
+
+}
+
+
+
+.main__caja__morada{
+    text-align: center;
+    padding: 10px 40px;
+    margin-top: 100px;
+    
+    
+    
+}
+
+.phones{
+    position: absolute;
+    top: -200px;
+    z-index: 4;
+    
+}
+
+
+
+.circle{
+    width: 150%;
+    position: absolute;
+    top: -170px;
+    z-index: -2;
+    left: -100px;
+}
+
+.circle > img{
+    object-fit: cover;
+    
+}
+
+
+
+.textos__cajamorada > h2{
+    margin-top: 50%;
+}
+
+.textos__cajamorada > p{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+/******************************************/
+
+.main__contenedor__design{
+    margin-top: 100px;
+}
+
+
+.imagenen > img{
+    margin-top: 50px;
+}
+
+.main_textos__contenedor{
+    margin-top: 50px;
+}
+
+.main_textos__contenedor > p{
+    margin-top: 45px;
+    padding: 10px 40px;
+}
+
+.main_textos__contenedor > img{
+    margin-top: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 800px;
+    background: #24242c;
+    border-top-right-radius: 100px;
+    margin-top: 100px;
+}
+
+.footer__content{
+    
+    color: #fff;
+    text-align: center;
+    
+}
+
+.footer__item > h1{
+    padding: 50px;
+    font-weight: 800;
+    font-family: 'Overpass', sans-serif !important;
+}
+
+.footer_sub_titulo{
+    padding-top: 40px;
+    font-weight: 600;
+}
+
+.footer__item__contenet{
+    font-size: 20px;
+}
+
+.footer__p{
+    padding-top: 10px;
+}
+
+.attribution{
+    background: #24242c;
+    color: #fff;
+}
+
+.attribution > a {
+    text-decoration: #fff;
+    color: #fff;
+}
+
